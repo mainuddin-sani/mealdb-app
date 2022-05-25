@@ -1,9 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './cardMeals.css'
 const MealsCard = (props) => {
     const {idMeal, strMeal, strMealThumb, strInstructions} = props.meals;
-    const mealsDetailsBtn = ()=>{
-        console.log('clicked')
+    let navigate = useNavigate();
+    const mealsDetailsBtn = (idMeal)=>{
+        navigate(`home/${idMeal}`)
     }
     return (
         <div className='card-items'>
@@ -12,7 +14,7 @@ const MealsCard = (props) => {
                 <h4>{strMeal}</h4>
                 <p>{idMeal}</p>
                 <p><small>{strInstructions.slice(0,50)}...</small></p>
-                <button onClick={mealsDetailsBtn}>Details</button>
+                <button onClick={()=>mealsDetailsBtn(idMeal)}>Details</button>
             </div>
         </div>
     );
