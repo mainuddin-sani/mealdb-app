@@ -1,0 +1,17 @@
+.searchbar {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.search {
+    border: 1px solid rgb(219, 214, 214);
+    height: 40px;
+    border-radius: 3px;
+    padding: 0 10px;
+    width: 300px;
+}
+
+.melasCard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}

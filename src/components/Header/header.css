@@ -1,0 +1,16 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-nav {
+    display: flex;
+}
+.navbar-nav li {
+    list-style: none;
+}
+.navbar-nav li:not(:last-child){
+    margin-right: 20px;
+}
+.navbar-nav li a{
+    text-decoration: none;
+}
